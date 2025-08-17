@@ -1,0 +1,6 @@
+** อธิบาย vendor ทั้งหมดที่ติดตั้งเข้ามาใช้ในโปรเจคนี้ **
+
+** ใช้สำหรับการติดต่อระหว่าง Laravel กับ openai **
+composer require openai-php/client =  vendor\openai-php
+** เครื่องมือยิง API ที่สามารถใช้ได้กับทุกๆเว็บเซอวิส **
+composer require guzzlehttp/guzzle = vendor\guzzlehttp
