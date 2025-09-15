@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/mnt/c/laragon/bin/php/php-8.3.16-Win32-vs16-x64/php.exe /mnt/c/laragon/bin/composer/composer.phar require google/apiclient)",
+      "Bash(rm:*)"
+    ],
+    "additionalDirectories": [
+      "/mnt/c/laragon/bin"
+    ]
+  }
+}

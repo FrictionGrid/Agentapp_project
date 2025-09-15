@@ -17,9 +17,9 @@ class  EmailData extends Model
 {
     return $this->belongsToMany(
         Customer::class,
-        'pivot_email_contacts',  
-        'email_id',           
-        'contact_id'            
+        'pivot_email_customers',  
+        'emaildata_id',           
+        'customer_id'            
     )
     ->using(pivot_email_customer::class)
     ->withPivot('status')

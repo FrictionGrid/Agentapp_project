@@ -10,20 +10,20 @@ use App\Models\customer;
 
 class pivot_email_customer extends pivot
 {
-    protected $table = 'pivot_email_contacts'; 
+    protected $table = 'pivot_email_customers'; 
     protected $fillable = [
-        'email_id',
-        'contact_id',
+        'emaildata_id',
+        'customer_id',
         'status',
         'lecture'
     ];
     public function email()
     {
-        return $this->belongsTo(emaildata::class, 'email_id');
+        return $this->belongsTo(emaildata::class, 'emaildata_id');
     }
     public function contact()
     {
-        return $this->belongsTo(customer::class, 'contact_id');
+        return $this->belongsTo(customer::class, 'customer_id');
     }
 
    // ดึงมาโชว์ตัวใหญ่ เก็บตัวเล็ก //
